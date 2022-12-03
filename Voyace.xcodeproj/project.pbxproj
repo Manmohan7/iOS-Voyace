@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		B80411ED293AADA200B02FC4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411EC293AADA200B02FC4 /* TableViewController.swift */; };
 		B80411EF293AAEC900B02FC4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411EE293AAEC900B02FC4 /* TableViewCell.swift */; };
+		B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F0293AD2F700B02FC4 /* HomeViewController.swift */; };
+		B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F2293AD36000B02FC4 /* HotelViewController.swift */; };
+		B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F4293AE5F600B02FC4 /* RoomViewController.swift */; };
 		B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C062938A52C00A0AC36 /* AppDelegate.swift */; };
 		B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */; };
-		B8E52C0B2938A52C00A0AC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C0A2938A52C00A0AC36 /* ViewController.swift */; };
 		B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C0C2938A52C00A0AC36 /* Main.storyboard */; };
 		B8E52C102938A52D00A0AC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C0F2938A52D00A0AC36 /* Assets.xcassets */; };
 		B8E52C132938A52D00A0AC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C112938A52D00A0AC36 /* LaunchScreen.storyboard */; };
@@ -20,10 +22,12 @@
 /* Begin PBXFileReference section */
 		B80411EC293AADA200B02FC4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B80411EE293AAEC900B02FC4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B80411F0293AD2F700B02FC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B80411F2293AD36000B02FC4 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
+		B80411F4293AE5F600B02FC4 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B8E52C032938A52C00A0AC36 /* Voyace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E52C062938A52C00A0AC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8E52C0A2938A52C00A0AC36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8E52C0D2938A52C00A0AC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8E52C0F2938A52D00A0AC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8E52C122938A52D00A0AC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 				B80411EE293AAEC900B02FC4 /* TableViewCell.swift */,
 				B80411EC293AADA200B02FC4 /* TableViewController.swift */,
 				B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */,
-				B8E52C0A2938A52C00A0AC36 /* ViewController.swift */,
+				B80411F0293AD2F700B02FC4 /* HomeViewController.swift */,
+				B80411F2293AD36000B02FC4 /* HotelViewController.swift */,
+				B80411F4293AE5F600B02FC4 /* RoomViewController.swift */,
 				B8E52C0C2938A52C00A0AC36 /* Main.storyboard */,
 				B8E52C0F2938A52D00A0AC36 /* Assets.xcassets */,
 				B8E52C112938A52D00A0AC36 /* LaunchScreen.storyboard */,
@@ -145,10 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80411EF293AAEC900B02FC4 /* TableViewCell.swift in Sources */,
-				B8E52C0B2938A52C00A0AC36 /* ViewController.swift in Sources */,
+				B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */,
+				B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */,
 				B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */,
 				B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */,
 				B80411ED293AADA200B02FC4 /* TableViewController.swift in Sources */,
+				B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
