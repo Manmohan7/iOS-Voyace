@@ -25,6 +25,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
+    @IBAction func viewConfirmationAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "viewConfirmation", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F0293AD2F700B02FC4 /* HomeViewController.swift */; };
 		B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F2293AD36000B02FC4 /* HotelViewController.swift */; };
 		B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F4293AE5F600B02FC4 /* RoomViewController.swift */; };
+		B80411F7293B127100B02FC4 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */; };
 		B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C062938A52C00A0AC36 /* AppDelegate.swift */; };
 		B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */; };
 		B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C0C2938A52C00A0AC36 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		B80411F0293AD2F700B02FC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B80411F2293AD36000B02FC4 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		B80411F4293AE5F600B02FC4 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		B8E52C032938A52C00A0AC36 /* Voyace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E52C062938A52C00A0AC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				B80411F0293AD2F700B02FC4 /* HomeViewController.swift */,
 				B80411F2293AD36000B02FC4 /* HotelViewController.swift */,
 				B80411F4293AE5F600B02FC4 /* RoomViewController.swift */,
+				B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */,
 				B8E52C0C2938A52C00A0AC36 /* Main.storyboard */,
 				B8E52C0F2938A52D00A0AC36 /* Assets.xcassets */,
 				B8E52C112938A52D00A0AC36 /* LaunchScreen.storyboard */,
@@ -115,7 +118,7 @@
 				};
 			};
 			buildConfigurationList = B8E52BFE2938A52C00A0AC36 /* Build configuration list for PBXProject "Voyace" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -156,6 +159,7 @@
 				B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */,
 				B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */,
 				B80411ED293AADA200B02FC4 /* TableViewController.swift in Sources */,
+				B80411F7293B127100B02FC4 /* ConfirmationViewController.swift in Sources */,
 				B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

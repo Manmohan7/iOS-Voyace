@@ -25,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfw-Ns-JFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.92307692307692" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="132" y="-4"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="fcM-ul-7eP">
@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="940" y="-3"/>
         </scene>
-        <!--Hotel View Controller-->
+        <!--Hotel Info-->
         <scene sceneID="iUJ-qL-7sn">
             <objects>
                 <viewController id="AQt-Is-rjK" customClass="HotelViewController" customModule="Voyace" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +133,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af3-hi-tLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2470.3333333333335"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hotel Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-b7-bhv">
                                                 <rect key="frame" x="10" y="0.0" width="373" height="39"/>
@@ -205,14 +205,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj1-WE-eop">
-                                                <rect key="frame" x="10" y="334.33333333333326" width="373" height="2028.9999999999998"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. </mutableString>
+                                                <rect key="frame" x="10" y="334.33333333333331" width="373" height="872.66666666666674"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor. Donec malesuada erat purus, quis faucibus nibh finibus eu. Nunc eu dictum sem. Nulla enim urna, venenatis sit amet nunc in, consectetur pulvinar felis. Nulla quis est elementum, fringilla metus sit amet, facilisis neque. Nam venenatis urna et pharetra aliquam. Integer ultrices congue metus, sed pellentesque felis malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-08-RWU">
-                                                <rect key="frame" x="137.66666666666666" y="2387.3333333333335" width="118" height="35"/>
+                                                <rect key="frame" x="137.66666666666666" y="1231" width="118" height="35"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="View Rooms"/>
                                                 <connections>
@@ -263,16 +263,16 @@
                             <constraint firstItem="tkw-w6-Z3C" firstAttribute="top" secondItem="MIg-b7-VHb" secondAttribute="top" id="i7g-6R-FE7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KDa-xu-JO5"/>
+                    <navigationItem key="navigationItem" title="Hotel Info" id="KDa-xu-JO5"/>
                     <connections>
                         <segue destination="moR-IC-TV8" kind="show" identifier="viewRoom" id="4dg-3J-LxR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgQ-3A-Pyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690.8396946564885" y="-3.5211267605633805"/>
+            <point key="canvasLocation" x="1723" y="-3"/>
         </scene>
-        <!--Room View Controller-->
+        <!--Room Selection-->
         <scene sceneID="PKJ-Pm-hD9">
             <objects>
                 <viewController id="moR-IC-TV8" customClass="RoomViewController" customModule="Voyace" customModuleProvider="target" sceneMemberID="viewController">
@@ -301,7 +301,7 @@
                                                     <rect key="frame" x="0.0" y="12" width="373" height="375"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7Q-es-2K3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="150"/>
+                                                            <rect key="frame" x="10" y="10" width="353" height="150"/>
                                                             <color key="backgroundColor" red="1" green="0.7262617643" blue="0.42511541879999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -310,13 +310,13 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-ah-M8f">
-                                                            <rect key="frame" x="10" y="174" width="353" height="26.333333333333343"/>
+                                                            <rect key="frame" x="10" y="184" width="353" height="26.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZi-jp-ZWL">
-                                                            <rect key="frame" x="10" y="212.33333333333334" width="353" height="84.666666666666657"/>
+                                                            <rect key="frame" x="10" y="222.33333333333334" width="353" height="74.666666666666657"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tempus elit. Phasellus interdum consectetur diam, a facilisis dolor.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -335,6 +335,9 @@
                                                             <rect key="frame" x="151.33333333333337" y="310.33333333333331" width="211.66666666666663" height="35"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                            <connections>
+                                                                <action selector="viewConfirmationAction:" destination="moR-IC-TV8" eventType="touchUpInside" id="9BA-da-PHS"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -348,10 +351,10 @@
                                                         <constraint firstItem="h7Q-es-2K3" firstAttribute="height" secondItem="HER-tb-Ggc" secondAttribute="height" multiplier="0.4" id="SMN-fg-SjO"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="obn-0z-wqY" secondAttribute="bottom" constant="26" id="Shg-7g-5tH"/>
                                                         <constraint firstItem="6KO-ah-M8f" firstAttribute="leading" secondItem="HER-tb-Ggc" secondAttribute="leading" constant="10" id="URU-tc-Yb5"/>
-                                                        <constraint firstItem="h7Q-es-2K3" firstAttribute="top" secondItem="HER-tb-Ggc" secondAttribute="top" id="b07-p8-anB"/>
-                                                        <constraint firstAttribute="trailing" secondItem="h7Q-es-2K3" secondAttribute="trailing" id="gGg-jn-GqT"/>
+                                                        <constraint firstItem="h7Q-es-2K3" firstAttribute="top" secondItem="HER-tb-Ggc" secondAttribute="top" constant="10" id="b07-p8-anB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="h7Q-es-2K3" secondAttribute="trailing" constant="10" id="gGg-jn-GqT"/>
                                                         <constraint firstAttribute="trailing" secondItem="6KO-ah-M8f" secondAttribute="trailing" constant="10" id="giM-wl-wS4"/>
-                                                        <constraint firstItem="h7Q-es-2K3" firstAttribute="leading" secondItem="HER-tb-Ggc" secondAttribute="leading" id="iSJ-gA-B1c"/>
+                                                        <constraint firstItem="h7Q-es-2K3" firstAttribute="leading" secondItem="HER-tb-Ggc" secondAttribute="leading" constant="10" id="iSJ-gA-B1c"/>
                                                         <constraint firstItem="6rq-uc-bv9" firstAttribute="trailing" secondItem="EZi-jp-ZWL" secondAttribute="trailing" id="kGb-5c-1mz"/>
                                                         <constraint firstItem="EZi-jp-ZWL" firstAttribute="leading" secondItem="6KO-ah-M8f" secondAttribute="leading" id="mdO-VV-Ri8"/>
                                                         <constraint firstItem="obn-0z-wqY" firstAttribute="top" secondItem="EZi-jp-ZWL" secondAttribute="bottom" constant="16" id="tvl-Tk-X1j"/>
@@ -397,11 +400,61 @@
                             <constraint firstItem="IrX-FG-dpK" firstAttribute="top" secondItem="84d-0f-igP" secondAttribute="top" id="yRH-RT-fUd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NXN-wh-rzU"/>
+                    <navigationItem key="navigationItem" title="Room Selection" id="NXN-wh-rzU"/>
+                    <connections>
+                        <segue destination="eTa-50-1bc" kind="show" identifier="viewConfirmation" id="ONH-yg-nbM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3G-BZ-fTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449.6183206106871" y="-4.2253521126760569"/>
+            <point key="canvasLocation" x="2520" y="-4"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="UJV-ej-vEA">
+            <objects>
+                <viewController id="eTa-50-1bc" customClass="ConfirmationViewController" customModule="Voyace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FIz-JD-UbY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-Tm-2zH">
+                                <rect key="frame" x="10" y="103" width="373" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-Ev-x7R">
+                                <rect key="frame" x="10" y="189.33333333333334" width="373" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-11-m1Z">
+                                <rect key="frame" x="10" y="228.33333333333334" width="373" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DxF-lT-9Me"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g7b-Ev-x7R" firstAttribute="top" secondItem="Gi6-Tm-2zH" secondAttribute="bottom" constant="48" id="88A-mb-31O"/>
+                            <constraint firstItem="Gi6-Tm-2zH" firstAttribute="leading" secondItem="DxF-lT-9Me" secondAttribute="leading" constant="10" id="XnP-aR-gmA"/>
+                            <constraint firstItem="DxF-lT-9Me" firstAttribute="trailing" secondItem="g7b-Ev-x7R" secondAttribute="trailing" constant="10" id="b4Y-7i-UFP"/>
+                            <constraint firstItem="kYU-11-m1Z" firstAttribute="trailing" secondItem="g7b-Ev-x7R" secondAttribute="trailing" id="fqR-ds-VG7"/>
+                            <constraint firstItem="kYU-11-m1Z" firstAttribute="top" secondItem="g7b-Ev-x7R" secondAttribute="bottom" constant="10" id="kJD-zJ-2hb"/>
+                            <constraint firstItem="DxF-lT-9Me" firstAttribute="trailing" secondItem="Gi6-Tm-2zH" secondAttribute="trailing" constant="10" id="mNt-GH-T8c"/>
+                            <constraint firstItem="Gi6-Tm-2zH" firstAttribute="top" secondItem="DxF-lT-9Me" secondAttribute="top" id="tbY-4F-1iU"/>
+                            <constraint firstItem="kYU-11-m1Z" firstAttribute="leading" secondItem="g7b-Ev-x7R" secondAttribute="leading" id="xDV-DF-CWj"/>
+                            <constraint firstItem="g7b-Ev-x7R" firstAttribute="leading" secondItem="DxF-lT-9Me" secondAttribute="leading" constant="10" id="zbJ-gy-Kuv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0kh-32-WjS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHt-Cj-Ns5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3304.5801526717555" y="-3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
