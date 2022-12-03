@@ -23,7 +23,10 @@ class HotelViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func viewRoomAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "viewRoom", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
