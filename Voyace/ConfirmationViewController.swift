@@ -9,13 +9,23 @@ import UIKit
 
 class ConfirmationViewController: UIViewController {
 
+    @IBOutlet weak var popUpView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        popUpView.isHidden = true
     }
     
-
+    
+    @IBAction func viewPopUp(_ sender: Any) {
+        popUpView.isHidden = false
+    }
+    
+    @IBAction func confirmBooking(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
