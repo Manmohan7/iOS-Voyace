@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B80411ED293AADA200B02FC4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411EC293AADA200B02FC4 /* TableViewController.swift */; };
 		B80411EF293AAEC900B02FC4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411EE293AAEC900B02FC4 /* TableViewCell.swift */; };
 		B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F0293AD2F700B02FC4 /* HomeViewController.swift */; };
 		B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F2293AD36000B02FC4 /* HotelViewController.swift */; };
 		B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F4293AE5F600B02FC4 /* RoomViewController.swift */; };
 		B80411F7293B127100B02FC4 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */; };
+		B80411F9293CB1FF00B02FC4 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B80411F8293CB1FF00B02FC4 /* data.json */; };
+		B80411FB293DBA4700B02FC4 /* voyace.json in Resources */ = {isa = PBXBuildFile; fileRef = B80411FA293DBA4700B02FC4 /* voyace.json */; };
+		B80411FD293DD78600B02FC4 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411FC293DD78600B02FC4 /* DBHelper.swift */; };
 		B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C062938A52C00A0AC36 /* AppDelegate.swift */; };
 		B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */; };
 		B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C0C2938A52C00A0AC36 /* Main.storyboard */; };
@@ -21,12 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B80411EC293AADA200B02FC4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B80411EE293AAEC900B02FC4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B80411F0293AD2F700B02FC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B80411F2293AD36000B02FC4 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		B80411F4293AE5F600B02FC4 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		B80411F8293CB1FF00B02FC4 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B80411FA293DBA4700B02FC4 /* voyace.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = voyace.json; sourceTree = "<group>"; };
+		B80411FC293DD78600B02FC4 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		B8E52C032938A52C00A0AC36 /* Voyace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E52C062938A52C00A0AC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,9 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				B8E52C062938A52C00A0AC36 /* AppDelegate.swift */,
-				B80411EE293AAEC900B02FC4 /* TableViewCell.swift */,
-				B80411EC293AADA200B02FC4 /* TableViewController.swift */,
 				B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */,
+				B80411F8293CB1FF00B02FC4 /* data.json */,
+				B80411FA293DBA4700B02FC4 /* voyace.json */,
+				B80411FC293DD78600B02FC4 /* DBHelper.swift */,
+				B80411EE293AAEC900B02FC4 /* TableViewCell.swift */,
 				B80411F0293AD2F700B02FC4 /* HomeViewController.swift */,
 				B80411F2293AD36000B02FC4 /* HotelViewController.swift */,
 				B80411F4293AE5F600B02FC4 /* RoomViewController.swift */,
@@ -143,6 +149,8 @@
 				B8E52C132938A52D00A0AC36 /* LaunchScreen.storyboard in Resources */,
 				B8E52C102938A52D00A0AC36 /* Assets.xcassets in Resources */,
 				B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */,
+				B80411FB293DBA4700B02FC4 /* voyace.json in Resources */,
+				B80411F9293CB1FF00B02FC4 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +165,8 @@
 				B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */,
 				B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */,
 				B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */,
+				B80411FD293DD78600B02FC4 /* DBHelper.swift in Sources */,
 				B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */,
-				B80411ED293AADA200B02FC4 /* TableViewController.swift in Sources */,
 				B80411F7293B127100B02FC4 /* ConfirmationViewController.swift in Sources */,
 				B80411F1293AD2F700B02FC4 /* HomeViewController.swift in Sources */,
 			);

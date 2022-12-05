@@ -38,9 +38,6 @@
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nGg-8i-aPX">
                                 <rect key="frame" x="0.0" y="103" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="fst-OT-88n" id="cjD-j3-00A"/>
-                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O8v-qV-x8L">
                                 <rect key="frame" x="0.0" y="183" width="393" height="635"/>
@@ -92,6 +89,11 @@
                                                 <constraint firstItem="vZf-Z4-bKQ" firstAttribute="leading" secondItem="gP1-yh-a3c" secondAttribute="trailing" constant="10" id="pc5-04-tnu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hotelDescription" destination="vZf-Z4-bKQ" id="scE-d8-nWp"/>
+                                            <outlet property="hotelImage" destination="gP1-yh-a3c" id="kKA-Ee-uIF"/>
+                                            <outlet property="hotelName" destination="5LT-Pq-8Z0" id="Y4Z-5Y-Bpw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -196,11 +198,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bw-1S-SAc">
-                                                <rect key="frame" x="10" y="289.33333333333331" width="373" height="21"/>
+                                                <rect key="frame" x="10" y="289.33333333333331" width="65.333333333333329" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="jNX-8Z-qff"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hotel rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-sv-BDM">
+                                                <rect key="frame" x="83" y="290" width="300" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -224,12 +232,14 @@
                                         <constraints>
                                             <constraint firstItem="1Yu-b7-bhv" firstAttribute="leading" secondItem="af3-hi-tLs" secondAttribute="leading" constant="10" id="42s-Dh-O9P"/>
                                             <constraint firstAttribute="bottom" secondItem="aDB-08-RWU" secondAttribute="bottom" constant="48" id="6b3-rU-Y8N"/>
+                                            <constraint firstItem="VmS-sv-BDM" firstAttribute="firstBaseline" secondItem="5bw-1S-SAc" secondAttribute="firstBaseline" id="BmE-Q4-Dmq"/>
                                             <constraint firstItem="Xj1-WE-eop" firstAttribute="top" secondItem="5bw-1S-SAc" secondAttribute="bottom" constant="24" id="COi-sH-nGH"/>
-                                            <constraint firstItem="Xj1-WE-eop" firstAttribute="trailing" secondItem="5bw-1S-SAc" secondAttribute="trailing" id="JX2-BX-U3Z"/>
+                                            <constraint firstItem="Xj1-WE-eop" firstAttribute="trailing" secondItem="1d6-yL-LLN" secondAttribute="trailing" id="Jlo-CO-z7U"/>
                                             <constraint firstItem="0h8-VU-dyH" firstAttribute="leading" secondItem="1Yu-b7-bhv" secondAttribute="leading" id="N0L-yZ-sg8"/>
                                             <constraint firstItem="aDB-08-RWU" firstAttribute="top" secondItem="Xj1-WE-eop" secondAttribute="bottom" constant="24" id="RTU-s1-WBs"/>
                                             <constraint firstItem="5bw-1S-SAc" firstAttribute="top" secondItem="1d6-yL-LLN" secondAttribute="bottom" constant="10" id="WzQ-Te-OSq"/>
-                                            <constraint firstItem="5bw-1S-SAc" firstAttribute="trailing" secondItem="1d6-yL-LLN" secondAttribute="trailing" id="XrN-pQ-9EZ"/>
+                                            <constraint firstItem="VmS-sv-BDM" firstAttribute="height" secondItem="5bw-1S-SAc" secondAttribute="height" id="baq-6Y-hqw"/>
+                                            <constraint firstItem="Xj1-WE-eop" firstAttribute="leading" secondItem="1d6-yL-LLN" secondAttribute="leading" id="dAf-Jb-Bnv"/>
                                             <constraint firstItem="1d6-yL-LLN" firstAttribute="leading" secondItem="0h8-VU-dyH" secondAttribute="leading" id="dUT-Gz-I81"/>
                                             <constraint firstAttribute="trailing" secondItem="1Yu-b7-bhv" secondAttribute="trailing" constant="10" id="e1i-n5-Kz6"/>
                                             <constraint firstItem="1d6-yL-LLN" firstAttribute="top" secondItem="0h8-VU-dyH" secondAttribute="bottom" constant="48" id="ff5-vc-W0z"/>
@@ -237,8 +247,8 @@
                                             <constraint firstItem="0h8-VU-dyH" firstAttribute="top" secondItem="1Yu-b7-bhv" secondAttribute="bottom" constant="18" id="qjO-hi-s6a"/>
                                             <constraint firstItem="0h8-VU-dyH" firstAttribute="trailing" secondItem="1Yu-b7-bhv" secondAttribute="trailing" id="tAb-FW-of8"/>
                                             <constraint firstItem="5bw-1S-SAc" firstAttribute="leading" secondItem="1d6-yL-LLN" secondAttribute="leading" id="tzK-XI-kYT"/>
+                                            <constraint firstItem="VmS-sv-BDM" firstAttribute="trailing" secondItem="1d6-yL-LLN" secondAttribute="trailing" id="uaA-WW-XDi"/>
                                             <constraint firstItem="1d6-yL-LLN" firstAttribute="trailing" secondItem="0h8-VU-dyH" secondAttribute="trailing" id="v0K-2a-5fq"/>
-                                            <constraint firstItem="Xj1-WE-eop" firstAttribute="leading" secondItem="5bw-1S-SAc" secondAttribute="leading" id="xTJ-Gl-WM2"/>
                                             <constraint firstItem="aDB-08-RWU" firstAttribute="centerX" secondItem="Xj1-WE-eop" secondAttribute="centerX" id="yOZ-KB-6NG"/>
                                         </constraints>
                                     </view>
@@ -265,12 +275,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Hotel Info" id="KDa-xu-JO5"/>
                     <connections>
+                        <outlet property="hotelDescription" destination="Xj1-WE-eop" id="bQq-Jl-unE"/>
+                        <outlet property="hotelName" destination="1Yu-b7-bhv" id="Flt-nO-con"/>
+                        <outlet property="hotelRating" destination="VmS-sv-BDM" id="ORv-Yf-Mnz"/>
                         <segue destination="moR-IC-TV8" kind="show" identifier="viewRoom" id="4dg-3J-LxR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgQ-3A-Pyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="-3"/>
+            <point key="canvasLocation" x="1722.9007633587785" y="-3.5211267605633805"/>
         </scene>
         <!--Room Selection-->
         <scene sceneID="PKJ-Pm-hD9">

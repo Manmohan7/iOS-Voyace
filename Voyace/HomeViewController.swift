@@ -7,8 +7,40 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+/**
+  Attempt 1
 
+  functions required are - getHotels, getHotel
+
+  from Home Screen pass the selected hotel name
+  on HotelPage fetch the Hotel from name
+
+  from Hotel Screen pass thr list of Room to Room page
+
+  from Room page pass the name
+ */
+
+/**
+ Attempt 2
+ 
+ functions required - getHotels
+ on the Home Controller show the list of Hotels
+ 
+ on selection pass the whole Hotel struct to Hotel Controller
+ 
+ on click of "view rooms" pass the whole Hotel struct to Room Controller
+ 
+ on Room Controller show the list of Rooms
+ 
+ on click of "reserve" pass the whole Hotel struct along with check in/out dates
+ 
+ on Confirmation Controller show the complete details
+ */
+
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let hotels = DBHelper().hotels
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,20 +65,31 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 15
+        return hotels.count
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "table_cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "table_cell", for: indexPath) as! TableViewCell
+        
+        let i = indexPath.row
 
-        // Configure the cell...
+        cell.hotelName.text = hotels[i].name
+        cell.hotelDescription.text = hotels[i].description
 
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "viewHotel", sender: nil)
+        self.performSegue(withIdentifier: "viewHotel", sender: hotels[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "viewHotel") {
+            let destination = segue.destination as? HotelViewController
+            destination?.hotelinfo = sender as? Hotel
+            
+        }
     }
 
 }

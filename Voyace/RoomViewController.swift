@@ -8,8 +8,19 @@
 import UIKit
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var hotelInfo: Hotel? = nil
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func viewConfirmationAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "viewConfirmation", sender: nil)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return hotelInfo!.rooms.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -18,16 +29,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
-
-    @IBAction func viewConfirmationAction(_ sender: Any) {
-        self.performSegue(withIdentifier: "viewConfirmation", sender: nil)
-    }
     /*
     // MARK: - Navigation
 
