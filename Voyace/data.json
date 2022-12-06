@@ -4,9 +4,9 @@
          "name":"Embassy Suites ",
          "type":"Suites and resorts",
          "images":[
-            "embassysuites_image1.svg",
-            "embassysuites_image2.svg",
-            "embassysuites_image3.svg"
+            "embassysuites_image1.jpeg",
+            "embassysuites_image2.jpeg",
+            "embassysuites_image3.jpeg"
          ],
          "rating":"4.5",
          "location":"Niagara Falls",
@@ -14,19 +14,19 @@
          "rooms": [
             {
                "name":"2 ROOM CANADIAN FALLSVIEW SUITE - 1 KING BED ",
-               "image":"embassysuites_room1.svg",
+               "image":"embassysuites_room1.jpeg",
                "fare":"$191",
                "description":"Canadian Horseshoe Fallsview Sofa Bed Shower 2 Televisions Located on floors 11 through 42 this two-room suite with one king-sized bed offers views of the famous Canadian Horseshoe Falls."
             },
             {
                "name":"Double room ",
-               "image":"embassysuites_room2.svg",
+               "image":"embassysuites_room2.jpeg",
                "fare":"$255",
                "description":"Canadian Horseshoe & American Fallsview, High Floor Sofa Bed Shower 2 Televisions Located on floors 27 through 42 this two-room suite offers excellent views of the famous Canadian Horseshoe Falls and American Falls. Relax in the separate bedroom with one king-sized bed."
             },
             {
                "name":"STUDIO SUITE - CITYVIEW - 1 KING BED ",
-               "image":"embassysuites_room3.svg",
+               "image":"embassysuites_room3.jpeg",
                "fare":"$171",
                "description":"Canadian Horseshoe & American Fallsview, High Floor Sofa Bed Shower 2 Televisions Located on floors 27 through 42 this two-room suite offers excellent views of the famous Canadian Horseshoe Falls and American Falls. Relax in the separate bedroom with one king-sized bed."
             }
@@ -36,9 +36,9 @@
          "name":"Radisson Blu Toronto Downtown ",
          "type":"Airport Hotel",
          "images":[
-            "radisson_image1.svg",
-            "radissonradissonimage2.svg",
-            "radissonimage3.svg"
+            "radisson_image1.jpeg",
+            "radisson_image2.jpeg",
+            "radisson_image3.jpeg"
          ],
          "rating":"4.5",
          "location":"Toronto Downtown",
@@ -46,31 +46,31 @@
          "rooms":[
             {
                "name":"2 ROOM CANADIAN FALLSVIEW SUITE - 1 KING BED ",
-               "image":"radisson_room1.svg",
+               "image":"radisson_room1.jpeg",
                "fare":"$191",
                "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
             },
             {
                "name":"Double room ",
-               "image":"radisson_room2.svg",
+               "image":"radisson_room2.jpeg",
                "fare":"$255",
                "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
             },
             {
                "name":"STUDIO SUITE - CITYVIEW - 1 KING BED ",
-               "image":"radisson_room3.svg",
+               "image":"radisson_room3.jpeg",
                "fare":"$171",
                "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
             },
             {
                "name":"Double room ",
-               "image":"radisson_room4.svg",
+               "image":"radisson_room4.jpeg",
                "fare":"$255",
                "description":"Featuring views of the city and the CN Tower, our standard room is a stylish choice for friends jet-setting as a duo. You’ll enjoy everything you need for a great stay, from free Wi-Fi and a refrigerator to a work desk and a 55-inch flat-screen TV. "
             },
             {
                "name":"Double room ",
-               "image":"radisson_room5.svg",
+               "image":"radisson_room5.jpeg",
                "fare":"$255",
                "description":"f you want to enhance your corporate trip or cultural getaway, book this premium room to experience the serenity of Lake Ontario from the floor-to-ceiling window. "
             }
@@ -80,9 +80,9 @@
          "name":"Holiday Inn Toronto Downtown Centre",
          "type":"Airport Hotel",
          "images":[
-            "holiday_image1.svg",
-            "holiday_image2.svg",
-            "holiday_image3.svg"
+            "holiday_image1.jpeg",
+            "holiday_image2.jpeg",
+            "holiday_image3.jpeg"
          ],
          "rating":"4.5",
          "location":"Downtown Toronto",
@@ -90,31 +90,31 @@
          "rooms":[
             {
                "name":"King Bed",
-               "image":"holiday_room1.svg",
+               "image":"holiday_room1.jpeg",
                "fare":"$191",
                "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
             },
             {
                "name":"2 Queen Beds ",
-               "image":"holiday_room2.svg",
+               "image":"holiday_room2.jpeg",
                "fare":"$255",
                "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
             },
             {
                "name":"Premium Room-King Bed",
-               "image":"holiday_room3.svg",
+               "image":"holiday_room3.jpeg",
                "fare":"$171",
                "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
             },
             {
                "name":"Premium Room-2 Queen Beds",
-               "image":"holiday_room4.svg",
+               "image":"holiday_room4.jpeg",
                "fare":"$255",
                "description":"Featuring views of the city and the CN Tower, our standard room is a stylish choice for friends jet-setting as a duo. You’ll enjoy everything you need for a great stay, from free Wi-Fi and a refrigerator to a work desk and a 55-inch flat-screen TV. "
             },
             {
                "name":"Premium Room-Lakeview ",
-               "image":"holiday_room5.svg",
+               "image":"holiday_room5.jpeg",
                "fare":"$255",
                "description":"If you want to enhance your corporate trip or cultural getaway, book this premium room to experience the serenity of Lake Ontario from the floor-to-ceiling window. "
             }
@@ -124,9 +124,9 @@
          "name":"Chelsea Hotel",
          "type":"Hotel",
          "images":[
-            "radisson_image1.svg",
-            "radissonradissonimage2.svg",
-            "radissonimage3.svg"
+            "chelsea_image1.jpeg",
+            "chelsea_image2.jpeg",
+            "chelsea_image3.jpeg"
          ],
          "rating":"4.5",
          "location":"Toronto, ON",
@@ -134,23 +134,215 @@
          "rooms": [
             {
                "name":"1 Queen Bed",
-               "image":"chelsea_room1.svg",
+               "image":"chelsea_room1.jpeg",
                "fare":"$191",
                "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
             },
             {
                "name":"Double Bedroom ",
-               "image":"chelsea_room2.svg",
+               "image":"chelsea_room2.jpeg",
                "fare":"$255",
                "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
             },
             {
                "name":"Premium Room",
-               "image":"chelsea_room3.svg",
+               "image":"chelsea_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"Hyatt Regency Toronto",
+         "type":"Airport Hotel",
+         "images":[
+            "hyatt_image1.jpeg",
+            "hyatt_image2.jpeg",
+            "hyatt_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Toronto",
+         "description":"Discover the excitement of Downtown Toronto’s Entertainment District, steps from the business and financial district and all that makes the city a vibrant destination.",
+         "rooms":[
+            {
+               "name":"King Bed",
+               "image":"hyatt_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"hyatt_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"hyatt_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"Sandman Hotel",
+         "type":"Hotel",
+         "images":[
+            "sandman_image1.jpeg",
+            "sandman_image2.jpeg",
+            "sandman_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Oakville",
+         "description":"Our list of outstanding on-site dining experiences are second-to-none. We offer inviting and refined upscale dining at Chop Steakhouse & Bar and casual, relaxed dining at Moxies. For more of that classic diner feel, Denny’s restaurants are here for you, and our collection of lounges—Bar One, Rockford Grill, and Shark Club Sports Bar & Grill—are great spots to meet up and kick back with friends and family.",
+         "rooms": [
+            {
+               "name":"King Bed",
+               "image":"sandman_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"sandman_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"sandman_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"Pantages Hotel",
+         "type":"Downtown Hotel",
+         "images":[
+            "pantages_image1.jpeg",
+            "pantages_image2.jpeg",
+            "pantages_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Oakville",
+         "description":"A boutique hotel with intimate surroundings in the heart of Canada’s Downtown. Take your seats at Stages Restaurant & Lounge or rest your head in one of our beautifully designed Suites.",
+         "rooms": [
+            {
+               "name":"King Bed",
+               "image":"pantages_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"pantages_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"pantages_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"DoubleTree by Hilton Hotel",
+         "type":"Resorts and Hotels",
+         "images":[
+            "doubletree_image1.jpeg",
+            "doubletree_image2.jpeg",
+            "doubletree_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Oakville",
+         "description":"Find us in downtown Toronto, around the corner from St Patrick Station. We’re blocks from Nathan Phillips Square and the Eaton Centre, and the CN Tower, Scotiabank Arena, and Kensington Market are within two kilometers. Our hotel has a 24-hour market, pool, sauna, and fitness center. Every stay begins with a warm chocolate chip cookie.",
+         "rooms": [
+            {
+               "name":"King Bed",
+               "image":"doubletree_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"doubletree_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"doubletree_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"Cambridge Suites",
+         "type":"Suites",
+         "images":[
+            "cambridge_image1.jpeg",
+            "cambridge_image2.jpeg",
+            "cambridge_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Oakville",
+         "description":"Stay, play, rest and relax at the Cambridge Suites Toronto. Our downtown all-suite hotel is located steps away from the Eaton Centre, Ed Mirvish Theatre, the Elgin and Winter Garden Theatres and the Hockey Hall of Fame. Attached to Toronto's PATH, this bright and spacious pedestrian walkway connects you with the Rogers Centre, Scotiabank Arena, Ripley's Aquarium, as well as businesses, shops and services.",
+         "rooms": [
+            {
+               "name":"King Bed",
+               "image":"cambridge_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"cambridge_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"cambridge_room3.jpeg",
+               "fare":"$171",
+               "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
+            }
+         ]
+      },
+      {
+         "name":"One King West Hotel & Residence",
+         "type":"Hotel & Residence",
+         "images":[
+            "oneking_image1.jpeg",
+            "oneking_image2.jpeg",
+            "oneking_image3.jpeg"
+         ],
+         "rating":"4.5",
+         "location":"Oakville",
+         "description":"Ideally located in the heart of downtown Toronto at the corner of King and Yonge streets, One King West places you within minutes to downtown financial, entertainment, and shopping districts. Whether in town for a weekend or an extended stay, settle into one of our sophisticated and well-appointed suites located in either our HISTORIC Dominion Bank Building or Toronto’s famous “Sliver” condo TOWER.",
+         "rooms": [
+            {
+               "name":"King Bed",
+               "image":"oneking_room1.jpeg",
+               "fare":"$191",
+               "description":"Modern furnishings and a refrigerator make our standard rooms a welcoming choice if you’re flying into the YTZ airport, located about a five-minute Uber ride away. Stretch out on the king-size Simmons Beautyrest® pillowtop mattress and use free Wi-Fi to make a reservation at one of Little Italy’s best pasta spots."
+            },
+            {
+               "name":"Queen Bed",
+               "image":"oneking_room2.jpeg",
+               "fare":"$255",
+               "description":"With two Simmons Beautyrest® pillowtop beds and premium bed linens, these rooms are serious about sleep."
+            },
+            {
+               "name":"Premium Room",
+               "image":"oneking_room3.jpeg",
                "fare":"$171",
                "description":"After you have toured downtown Toronto retire to the comfort of your premium room which features upgraded bed linens and partial lake views. Thanks to room service you can treat yourself to cinnamon roll pancakes for breakfast or a Watermark burger for dinner. "
             }
          ]
       }
-    ]
+   ]
 }

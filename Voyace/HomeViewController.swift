@@ -37,13 +37,17 @@ import UIKit
  on Confirmation Controller show the complete details
  */
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UISearchBarDelegate {
     
     let hotels = DBHelper().hotels
+    var filteredHotels: [Hotel]!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        filteredHotels = hotels
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,17 +59,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "viewHotel") {
+            let destination = segue.destination as? HotelViewController
+            destination?.hotelInfo = sender as? Hotel
+            
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredHotels = searchText.isEmpty
+            ? hotels
+            : hotels.filter { $0.name.contains(searchText) } as [Hotel]
+        
+        tableView.reloadData()
+    }
+}
 
-    // MARK: - Table view data source
-
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return hotels.count
+        return filteredHotels.count
     }
 
     
@@ -74,8 +93,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let i = indexPath.row
 
-        cell.hotelName.text = hotels[i].name
-        cell.hotelDescription.text = hotels[i].description
+        let hotel = filteredHotels[i]
+        cell.hotelName.text = hotel.name
+        cell.hotelDescription.text = hotel.description
+        cell.hotelImage.image = UIImage(named: hotel.images[0])
 
         return cell
     }
@@ -83,13 +104,4 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "viewHotel", sender: hotels[indexPath.row])
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "viewHotel") {
-            let destination = segue.destination as? HotelViewController
-            destination?.hotelinfo = sender as? Hotel
-            
-        }
-    }
-
 }

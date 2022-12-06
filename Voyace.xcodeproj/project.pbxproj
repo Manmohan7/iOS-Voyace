@@ -13,8 +13,9 @@
 		B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F4293AE5F600B02FC4 /* RoomViewController.swift */; };
 		B80411F7293B127100B02FC4 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */; };
 		B80411F9293CB1FF00B02FC4 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B80411F8293CB1FF00B02FC4 /* data.json */; };
-		B80411FB293DBA4700B02FC4 /* voyace.json in Resources */ = {isa = PBXBuildFile; fileRef = B80411FA293DBA4700B02FC4 /* voyace.json */; };
 		B80411FD293DD78600B02FC4 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411FC293DD78600B02FC4 /* DBHelper.swift */; };
+		B80411FF293DFDF200B02FC4 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80411FE293DFDF200B02FC4 /* RoomTableViewCell.swift */; };
+		B8041203293EC5F500B02FC4 /* HotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8041202293EC5F500B02FC4 /* HotelCollectionViewCell.swift */; };
 		B8E52C072938A52C00A0AC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C062938A52C00A0AC36 /* AppDelegate.swift */; };
 		B8E52C092938A52C00A0AC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */; };
 		B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E52C0C2938A52C00A0AC36 /* Main.storyboard */; };
@@ -29,8 +30,9 @@
 		B80411F4293AE5F600B02FC4 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		B80411F8293CB1FF00B02FC4 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		B80411FA293DBA4700B02FC4 /* voyace.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = voyace.json; sourceTree = "<group>"; };
 		B80411FC293DD78600B02FC4 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		B80411FE293DFDF200B02FC4 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		B8041202293EC5F500B02FC4 /* HotelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCollectionViewCell.swift; sourceTree = "<group>"; };
 		B8E52C032938A52C00A0AC36 /* Voyace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E52C062938A52C00A0AC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,12 +75,13 @@
 				B8E52C062938A52C00A0AC36 /* AppDelegate.swift */,
 				B8E52C082938A52C00A0AC36 /* SceneDelegate.swift */,
 				B80411F8293CB1FF00B02FC4 /* data.json */,
-				B80411FA293DBA4700B02FC4 /* voyace.json */,
 				B80411FC293DD78600B02FC4 /* DBHelper.swift */,
 				B80411EE293AAEC900B02FC4 /* TableViewCell.swift */,
 				B80411F0293AD2F700B02FC4 /* HomeViewController.swift */,
 				B80411F2293AD36000B02FC4 /* HotelViewController.swift */,
+				B8041202293EC5F500B02FC4 /* HotelCollectionViewCell.swift */,
 				B80411F4293AE5F600B02FC4 /* RoomViewController.swift */,
+				B80411FE293DFDF200B02FC4 /* RoomTableViewCell.swift */,
 				B80411F6293B127100B02FC4 /* ConfirmationViewController.swift */,
 				B8E52C0C2938A52C00A0AC36 /* Main.storyboard */,
 				B8E52C0F2938A52D00A0AC36 /* Assets.xcassets */,
@@ -149,7 +152,6 @@
 				B8E52C132938A52D00A0AC36 /* LaunchScreen.storyboard in Resources */,
 				B8E52C102938A52D00A0AC36 /* Assets.xcassets in Resources */,
 				B8E52C0E2938A52C00A0AC36 /* Main.storyboard in Resources */,
-				B80411FB293DBA4700B02FC4 /* voyace.json in Resources */,
 				B80411F9293CB1FF00B02FC4 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80411FF293DFDF200B02FC4 /* RoomTableViewCell.swift in Sources */,
+				B8041203293EC5F500B02FC4 /* HotelCollectionViewCell.swift in Sources */,
 				B80411EF293AAEC900B02FC4 /* TableViewCell.swift in Sources */,
 				B80411F3293AD36000B02FC4 /* HotelViewController.swift in Sources */,
 				B80411F5293AE5F600B02FC4 /* RoomViewController.swift in Sources */,

@@ -35,9 +35,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nGg-8i-aPX">
+                            <searchBar contentMode="redraw" placeholder="Search Hotels" translatesAutoresizingMaskIntoConstraints="NO" id="nGg-8i-aPX">
                                 <rect key="frame" x="0.0" y="103" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fst-OT-88n" id="s33-OZ-9In"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O8v-qV-x8L">
                                 <rect key="frame" x="0.0" y="183" width="393" height="635"/>
@@ -50,7 +53,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="177.66667175292969"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gP1-yh-a3c">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gP1-yh-a3c">
                                                     <rect key="frame" x="10" y="10" width="157.33333333333334" height="157.66666666666666"/>
                                                     <color key="backgroundColor" red="0.71826796000000004" green="0.42744953990000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
@@ -116,6 +119,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="kmk-1o-BKr"/>
                     <connections>
+                        <outlet property="searchBar" destination="nGg-8i-aPX" id="2eB-o5-tVi"/>
+                        <outlet property="tableView" destination="O8v-qV-x8L" id="g0v-34-FWE"/>
                         <segue destination="AQt-Is-rjK" kind="show" identifier="viewHotel" id="fNk-QL-ong"/>
                     </connections>
                 </viewController>
@@ -156,14 +161,14 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotelImage" id="IV6-5B-meR">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hotelImageCell" id="IV6-5B-meR" customClass="HotelCollectionViewCell" customModule="Voyace" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I0Y-Fc-9zy">
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="I0Y-Fc-9zy">
                                                             <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7AG-9j-fQ0">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7AG-9j-fQ0">
                                                                     <rect key="frame" x="10" y="10" width="128" height="128"/>
                                                                     <color key="backgroundColor" red="1" green="0.7262617643" blue="0.42511541879999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <constraints>
@@ -184,6 +189,9 @@
                                                                 <constraint firstItem="7AG-9j-fQ0" firstAttribute="top" secondItem="I0Y-Fc-9zy" secondAttribute="top" constant="10" id="qL4-0v-F5O"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="hotelImage" destination="7AG-9j-fQ0" id="hx4-nJ-g73"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <connections>
@@ -198,16 +206,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bw-1S-SAc">
-                                                <rect key="frame" x="10" y="289.33333333333331" width="65.333333333333329" height="21"/>
+                                                <rect key="frame" x="10" y="289.33333333333331" width="64" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="jNX-8Z-qff"/>
+                                                    <constraint firstAttribute="width" constant="64" id="vni-DD-GUa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hotel rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-sv-BDM">
-                                                <rect key="frame" x="83" y="290" width="300" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-sv-BDM">
+                                                <rect key="frame" x="84" y="290" width="299" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -248,6 +257,7 @@
                                             <constraint firstItem="0h8-VU-dyH" firstAttribute="trailing" secondItem="1Yu-b7-bhv" secondAttribute="trailing" id="tAb-FW-of8"/>
                                             <constraint firstItem="5bw-1S-SAc" firstAttribute="leading" secondItem="1d6-yL-LLN" secondAttribute="leading" id="tzK-XI-kYT"/>
                                             <constraint firstItem="VmS-sv-BDM" firstAttribute="trailing" secondItem="1d6-yL-LLN" secondAttribute="trailing" id="uaA-WW-XDi"/>
+                                            <constraint firstItem="VmS-sv-BDM" firstAttribute="leading" secondItem="5bw-1S-SAc" secondAttribute="trailing" constant="10" id="uaO-WI-8z2"/>
                                             <constraint firstItem="1d6-yL-LLN" firstAttribute="trailing" secondItem="0h8-VU-dyH" secondAttribute="trailing" id="v0K-2a-5fq"/>
                                             <constraint firstItem="aDB-08-RWU" firstAttribute="centerX" secondItem="Xj1-WE-eop" secondAttribute="centerX" id="yOZ-KB-6NG"/>
                                         </constraints>
@@ -303,7 +313,7 @@
                                 <rect key="frame" x="10" y="161.33333333333331" width="373" height="656.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="roomCellIdentifier" rowHeight="399" id="Nkx-ZS-Aiu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="roomCellIdentifier" rowHeight="399" id="Nkx-ZS-Aiu" customClass="RoomTableViewCell" customModule="Voyace" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="373" height="399"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nkx-ZS-Aiu" id="UHx-IG-Mvt">
@@ -313,9 +323,12 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HER-tb-Ggc">
                                                     <rect key="frame" x="0.0" y="12" width="373" height="375"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7Q-es-2K3">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7Q-es-2K3">
                                                             <rect key="frame" x="10" y="10" width="353" height="150"/>
                                                             <color key="backgroundColor" red="1" green="0.7262617643" blue="0.42511541879999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="150" id="UMO-CQ-xWy"/>
+                                                            </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                     <integer key="value" value="12"/>
@@ -361,7 +374,6 @@
                                                         <constraint firstItem="EZi-jp-ZWL" firstAttribute="top" secondItem="6KO-ah-M8f" secondAttribute="bottom" constant="12" id="Dye-oX-Cdy"/>
                                                         <constraint firstItem="obn-0z-wqY" firstAttribute="width" secondItem="EZi-jp-ZWL" secondAttribute="width" multiplier="0.3" id="HvF-06-VZx"/>
                                                         <constraint firstItem="6rq-uc-bv9" firstAttribute="firstBaseline" secondItem="obn-0z-wqY" secondAttribute="firstBaseline" id="Lhs-7k-oJb"/>
-                                                        <constraint firstItem="h7Q-es-2K3" firstAttribute="height" secondItem="HER-tb-Ggc" secondAttribute="height" multiplier="0.4" id="SMN-fg-SjO"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="obn-0z-wqY" secondAttribute="bottom" constant="26" id="Shg-7g-5tH"/>
                                                         <constraint firstItem="6KO-ah-M8f" firstAttribute="leading" secondItem="HER-tb-Ggc" secondAttribute="leading" constant="10" id="URU-tc-Yb5"/>
                                                         <constraint firstItem="h7Q-es-2K3" firstAttribute="top" secondItem="HER-tb-Ggc" secondAttribute="top" constant="10" id="b07-p8-anB"/>
@@ -389,6 +401,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="roomDescription" destination="EZi-jp-ZWL" id="lLO-zb-qG2"/>
+                                            <outlet property="roomFare" destination="obn-0z-wqY" id="lUU-wX-bgY"/>
+                                            <outlet property="roomImage" destination="h7Q-es-2K3" id="Vcj-Ys-sUE"/>
+                                            <outlet property="roomName" destination="6KO-ah-M8f" id="LdB-O9-iYY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -415,6 +433,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Room Selection" id="NXN-wh-rzU"/>
                     <connections>
+                        <outlet property="fromDate" destination="b4p-Mt-BYa" id="8Ad-Tn-igB"/>
+                        <outlet property="toDate" destination="IrX-FG-dpK" id="4eY-Xe-AOB"/>
                         <segue destination="eTa-50-1bc" kind="show" identifier="viewConfirmation" id="ONH-yg-nbM"/>
                     </connections>
                 </viewController>
@@ -466,6 +486,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuQ-tJ-OW0">
+                                <rect key="frame" x="159.33333333333337" y="304.33333333333331" width="223.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0O-G6-nUa">
                                 <rect key="frame" x="159.33333333333337" y="337.33333333333331" width="223.66666666666663" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -504,12 +530,6 @@
                                     <action selector="viewPopUp:" destination="eTa-50-1bc" eventType="touchUpInside" id="3QA-Lz-RHi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuQ-tJ-OW0">
-                                <rect key="frame" x="159.33333333333337" y="304.33333333333331" width="223.66666666666663" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIr-n8-teI">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
@@ -518,6 +538,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your booking is confirmed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-cW-Yk7">
                                                 <rect key="frame" x="30.666666666666657" y="24" width="252.99999999999997" height="27"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -547,7 +568,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="mSU-V8-5hY" firstAttribute="centerY" secondItem="QIr-n8-teI" secondAttribute="centerY" id="0vb-sh-eht"/>
                                     <constraint firstItem="mSU-V8-5hY" firstAttribute="centerX" secondItem="QIr-n8-teI" secondAttribute="centerX" id="q4t-2d-cE7"/>
@@ -601,7 +622,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="0kh-32-WjS"/>
                     <connections>
+                        <outlet property="checkInDate" destination="NuQ-tJ-OW0" id="nRh-cX-V1u"/>
+                        <outlet property="checkOutDate" destination="G0O-G6-nUa" id="OGR-af-8lf"/>
+                        <outlet property="hotelLocation" destination="kYU-11-m1Z" id="MZN-dR-7qS"/>
+                        <outlet property="hotelName" destination="g7b-Ev-x7R" id="aCE-Ek-c5u"/>
+                        <outlet property="hotelRating" destination="dse-pc-WDZ" id="D0m-yq-dep"/>
                         <outlet property="popUpView" destination="QIr-n8-teI" id="Gb5-aE-ATd"/>
+                        <outlet property="roomName" destination="92G-eG-oGo" id="2jt-Yc-bWg"/>
+                        <outlet property="totalPrice" destination="EY0-4P-VaD" id="Z9L-kB-Ykm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHt-Cj-Ns5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -610,9 +638,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

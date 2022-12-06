@@ -9,7 +9,7 @@ import UIKit
 
 class HotelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var hotelinfo: Hotel? = nil
+    var hotelInfo: Hotel? = nil
     
     @IBOutlet weak var hotelName: UILabel!
     @IBOutlet weak var hotelDescription: UILabel!
@@ -18,34 +18,32 @@ class HotelViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hotelName.text = hotelinfo?.name
-        hotelDescription.text = hotelinfo?.description
-        hotelRating.text = hotelinfo?.rating
-        // Do any additional setup after loading the view.
+        hotelName.text = hotelInfo?.name
+        hotelDescription.text = hotelInfo?.description
+        hotelRating.text = hotelInfo?.rating
     }
     
     @IBAction func viewRoomAction(_ sender: Any) {
-        self.performSegue(withIdentifier: "viewRoom", sender: hotelinfo)
+        self.performSegue(withIdentifier: "viewRoom", sender: hotelInfo)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return hotelInfo!.images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hotelImage", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hotelImageCell", for: indexPath) as! HotelCollectionViewCell
+        let i = indexPath.row
+        
+        cell.hotelImage.image = UIImage(named: hotelInfo!.images[i])
+        
         return cell
     }
-    
-    
     
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        
         if(segue.identifier == "viewRoom") {
             let destination = segue.destination as? RoomViewController
             destination?.hotelInfo = sender as? Hotel

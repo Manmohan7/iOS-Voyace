@@ -35,11 +35,11 @@ struct Room: Codable {
 
 class DBHelper {
     var hotels: [Hotel] {
-        loadJson(filename: "data")!
+        loadJson()!
     }
     
-    private func loadJson(filename fileName: String) -> [Hotel]? {
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+    private func loadJson() -> [Hotel]? {
+        if let url = Bundle.main.url(forResource: "data", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
