@@ -60,6 +60,17 @@ class RoomViewController: UIViewController {
         let indexPath = table.indexPath(for: cell)
         let i = indexPath!.row
         let room: Room = hotelInfo!.rooms[i]
+//        print(fromDate.date)
+        
+        let timeFormatter = DateFormatter()
+        timeFormatter.timeStyle = DateFormatter.Style.short
+
+        var strDate = timeFormatter.string(from: fromDate.date)
+
+        let formattedFromDate = Calendar.current.dateComponents([.day, .month, .year], from: fromDate.date)
+        let formattedToDate = Calendar.current.dateComponents([.day, .month, .year], from: toDate.date)
+
+        print("\(formattedFromDate.day!)-\(formattedFromDate.month!)-\(formattedFromDate.year!)")
         
         var selectedHotel = hotelInfo!
         selectedHotel.rooms = [room]
@@ -68,7 +79,7 @@ class RoomViewController: UIViewController {
         
         let totalFare = calculateTotalFare(room: room, lengthOfStay: lengthOfStay)
         
-        let bookingInfo = BookingInfo(hotel: selectedHotel, checkInDate:"", checkOutDate: "", totalFare: totalFare, lengthOfStay: lengthOfStay)
+        let bookingInfo = BookingInfo(hotel: selectedHotel, checkInDate: "\(formattedFromDate.day!)-\(formattedFromDate.month!)-\(formattedFromDate.year!)", checkOutDate: "\(formattedToDate.day!)-\(formattedToDate.month!)-\(formattedToDate.year!)", totalFare: totalFare, lengthOfStay: lengthOfStay)
         
         //check results
         print(lengthOfStay)
