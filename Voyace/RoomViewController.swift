@@ -29,10 +29,17 @@ class RoomViewController: UIViewController {
     }
     
     // complete this function
-    private func calculateLength() -> Int {
+    private func calculateLength(fromDate: Date, toDate: Date) -> Int {
         // calculate the length of stay
-        return 0
+         let (numberOfDays) = Calendar.current.dateComponents([.day], from: fromDate, to: toDate).day!
+        return Int(numberOfDays)+1
     }
+    
+//    private func calculateLength() -> Int {
+//        // calculate the length of stay
+//        return 0
+//    }
+    
     
     private func calculateTotalFare(room: Room, lengthOfStay: Int) -> String {
         var fare = room.fare
@@ -57,11 +64,14 @@ class RoomViewController: UIViewController {
         var selectedHotel = hotelInfo!
         selectedHotel.rooms = [room]
         
-        let lengthOfStay = calculateLength()
+        let lengthOfStay = calculateLength(fromDate: fromDate.date, toDate: toDate.date)
         
         let totalFare = calculateTotalFare(room: room, lengthOfStay: lengthOfStay)
         
-        let bookingInfo = BookingInfo(hotel: selectedHotel, checkInDate: "", checkOutDate: "", totalFare: totalFare, lengthOfStay: lengthOfStay)
+        let bookingInfo = BookingInfo(hotel: selectedHotel, checkInDate:"", checkOutDate: "", totalFare: totalFare, lengthOfStay: lengthOfStay)
+        
+        //check results
+        print(lengthOfStay)
         
         self.performSegue(withIdentifier: "viewConfirmation", sender: bookingInfo)
     }
